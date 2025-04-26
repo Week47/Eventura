@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventura PH</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Background Colors */
+        body {
+            background-color: #735557; /* Soft muted purple for the overall background */
+        }
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+        .category-icons {
+            background-color: #97866A; /* Light olive for the category section */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .category-icons img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .event-card {
+            background-color: #D29F80; /* Light peach for event cards */
+            border: none;
+            border-radius: 10px;
+        }
+        .event-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .text-center h2, .text-center h3 {
+            color: #604652; /* Deep muted purple for headings */
+        }
+        .btn-primary {
+            background-color: #604652; /* Deep muted purple for buttons */
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #735557; /* Slightly lighter purple for hover effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <!-- Main Section: List of Events for the Month -->
+        <h2 class="text-center fw-bold mb-4" style="background-color: #D29F80; color: black; padding: 10px;">LIST OF EVENTS FOR THE MONTH</h2>
+        <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="C:\Users\mikha\OneDrive\Pictures\New folder\hazbin.jpeg" class="d-block w-100" alt="Event 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="C:\Users\mikha\OneDrive\Pictures\New folder\bruh.png" class="d-block w-100" alt="Event 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="C:\Users\mikha\OneDrive\Pictures\New folder\wide 2.jpg" class="d-block w-100" alt="Event 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Event Categories or Featured Hosts -->
+        <div class="category-icons d-flex justify-content-center my-4">
+            <img src="C:\Users\mikha\OneDrive\Pictures\New folder\bini.jpg" alt="Bini" class="mx-2">
+            <img src="C:\Users\mikha\OneDrive\Pictures\New folder\coj.jpg" alt="Cup of Joe" class="mx-2">
+            <img src="C:\Users\mikha\OneDrive\Pictures\New folder\tyler.jpg" alt="Tyler The Creator" class="mx-2">
+            <img src="C:\Users\mikha\OneDrive\Pictures\New folder\kpo.jpg" alt="SB19" class="mx-2">
+            <img src="C:\Users\mikha\OneDrive\Pictures\New folder\ace.jpg" alt="IV of Spades" class="mx-2">
+            <img src="C:\Users\mikha\OneDrive\Pictures\New folder\ben2x.jpg" alt="Ben & Ben" class="mx-2">
+        </div>
+
+        <!-- Top Trending in Quezon City -->
+        <h3 class="text-center fw-bold mt-5" style="background-color: #D29F80; color: black; padding: 10px;">TOP TRENDING IN QUEZON CITY</h3>
+        <div class="row mt-3">
+            <div class="col-md-2">
+                <div class="card event-card">
+                    <img src="C:\Users\mikha\OneDrive\Pictures\New folder\nek dep.jpg" alt="Event 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Neck Deep Concert</h5>
+                        <p class="card-text">British pop-punk band Neck Deep returns to Manila for a high-energy concert, promising an unforgettable night for fans of the genre.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card event-card">
+                    <img src="C:\Users\mikha\OneDrive\Pictures\New folder\lovelight.jpg" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Love & Light Festival</h5>
+                        <p class="card-text">A magical celebration featuring music, art installations, and wellness activities, the LOVE & LIGHT Festival offers a unique experience for attendees seeking positivity and connection.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card event-card">
+                    <img src="C:\Users\mikha\OneDrive\Pictures\New folder\busbus.jpg" alt="Event 3">
+                    <div class="card-body">
+                        <h5 class="card-title">ALL aBOARD Expo</h5>
+                        <p class="card-text">This ultimate board game experience invites enthusiasts of all ages to explore a vast collection of games, participate in tournaments, and connect with fellow gamers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card event-card">
+                    <img src="C:\Users\mikha\OneDrive\Pictures\New folder\hazbin.jpeg" alt="Event 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Inferno Fest 2025 - "The Vee Tower"</h5>
+                        <p class="card-text"> An immersive art and music festival, Inferno Fest 2025 showcases avant-garde performances and installations, creating a fiery fusion of creativity and expression.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card event-card">
+                    <img src="C:\Users\mikha\OneDrive\Pictures\New folder\maginhawa.jpg" alt="Event 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Maginhawa Arts & Food Festival</h5>
+                        <p class="card-text"> A beloved community event, the Maginhawa Arts & Food Festival transforms the street into a vibrant hub of culinary delights, artistic showcases, and live performances, celebrating local culture and creativity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card event-card">
+                    <img src="C:\Users\mikha\OneDrive\Pictures\New folder\anisama.jpg" alt="Event 6">
+                    <div class="card-body">
+                        <h5 class="card-title">ANISAMA WORLD 2025</h5>
+                        <p class="card-text">Japan’s biggest anime music festival, Animelo Summer Live (Anisama), makes its Philippine debut with a star-studded lineup including FLOW, MindaRyn, Mayu Maeshima, and more. Fans can expect powerful live performances of iconic anime theme songs in this one-night-only celebration of anime music.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="text-center my-4">
+            <button class="btn btn-primary mx-2">Load More</button>
+            <button class="btn btn-primary mx-2">Explore More Events</button>
+            <button class="btn btn-primary mx-2">Submit Event</button>
+            <button class="btn btn-primary mx-2">Subscribe</button>
+        </div>
+
+        <!-- Social Media Footer -->
+        <div class="text-center my-4">
+            <a href="https://www.facebook.com" target="_blank" class="mx-2 text-decoration-none text-white">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank" class="mx-2 text-decoration-none text-white">Instagram</a>
+            <a href="https://www.twitter.com" target="_blank" class="mx-2 text-decoration-none text-white">Twitter</a>
+            <a href="https://www.linkedin.com" target="_blank" class="mx-2 text-decoration-none text-white">LinkedIn</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
